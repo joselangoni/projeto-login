@@ -50,12 +50,22 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #eaf6ff url(../imagens/metal.jpg);
+    background: #eaf6ff url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
+    background-position: left bottom;
     height: 200px;
 }
 
 section#login > div#formulario {
     display: block;
     padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
 }
