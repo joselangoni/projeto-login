@@ -3,13 +3,11 @@
 /*
     Paleta de cores
 
-    Alice blue: #eaf6ff
-    Raisin Black: #232528
-    Egyptian blue: #0e34a0
-    Orange (web): #ffa400
-
-    Verde: #49a09d
-    Lilás: #5f2c82
+    Azul claro: #eaf6ff
+    Preto: #232528
+    Cinza: #494d53
+    Azul escuro: #0e34a0
+    Branco: #fbfbff
 */
 
 * {
@@ -20,7 +18,7 @@
 }
 
 body, html {
-    background-color: #eaf6ff;
+    background-color: #494d53;
     height: 100vh;
     width: 100vw;
 }
@@ -38,10 +36,10 @@ section#login {
     transform: translate(-50%, -50%);
     overflow: hidden;
 
-    background-color: white;
+    background-color: #fbfbff;
     width: 250px;
-    height: 500px;
-    border-radius: 15px;
+    height: 510px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
 
     transition: width 0.5s, height 0.5s;
@@ -52,7 +50,7 @@ section#login > div#imagem {
     display: block;
     background: #eaf6ff url(../imagens/metal.jpg) no-repeat;
     background-size: cover;
-    background-position: left bottom;
+    background-position: left center;
     height: 200px;
 }
 
@@ -68,4 +66,57 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo{
+    background-color: #494d53;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1.1em;
+    width: 100%;
+    height: 40px;
+    background-color: #0e34a0;
+    color: #fbfbff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #134be4;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #fbfbff;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #7b8d9b;
+}
+
+form > a.botao > i {
+    font-size: 1.2em;
+    padding-left: 5px;
 }
